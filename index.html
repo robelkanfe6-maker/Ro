@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="am">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RO — Made Freely</title>
+<title>ልዋጭ — FREEDOM</title>
 
 <style>
 * {
@@ -13,112 +13,166 @@
 }
 
 body {
-  background: #050505;
-  color: white;
+  background: #f6e58d;
+  color: #111;
   font-family: Arial, sans-serif;
 }
 
 header {
-  border-bottom: 1px solid white;
   padding: 25px;
+  border-bottom: 3px solid #d60000;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 4px;
+  color: #d60000;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -3px;
+  transform: rotate(-3deg);
 }
 
-.instagram {
-  color: white;
+nav a {
+  color: #111;
   text-decoration: none;
-  border: 1px solid white;
-  padding: 10px 16px;
+  margin-left: 18px;
+  font-weight: bold;
 }
 
 .hero {
-  padding: 80px 25px;
-  text-align: center;
-  border-bottom: 1px solid white;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 25px;
+  border-bottom: 3px solid #111;
 }
 
 .hero h1 {
-  font-size: 60px;
-  letter-spacing: 8px;
-  margin-bottom: 20px;
+  color: #d60000;
+  font-family: Georgia, serif;
+  font-size: clamp(70px, 18vw, 170px);
+  line-height: .8;
+  letter-spacing: -8px;
+  transform: rotate(-4deg);
+  text-shadow: 5px 5px 0 #111;
+  margin-bottom: 35px;
+}
+
+.hero h2 {
+  font-size: clamp(22px, 5vw, 45px);
+  letter-spacing: 4px;
+  margin-bottom: 18px;
 }
 
 .hero p {
-  font-size: 18px;
-  color: #ccc;
+  max-width: 600px;
+  font-size: 19px;
+  line-height: 1.6;
 }
 
-.section {
-  padding: 50px 25px;
+.freedom {
+  color: #d60000;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  margin-top: 30px;
 }
 
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  letter-spacing: 3px;
+.button {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background: #d60000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #111;
+}
+
+section {
+  padding: 60px 25px;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 35px;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
-  border: 1px solid white;
+  border: 3px solid #111;
+  background: #fff3a8;
   padding: 15px;
 }
 
 .card img {
   width: 100%;
+  height: 330px;
+  object-fit: cover;
   display: block;
-  margin-bottom: 20px;
+  border: 2px solid #111;
 }
 
 .card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #bbb;
-  line-height: 1.5;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin-top: 18px;
 }
 
 .price {
-  font-size: 20px;
+  color: #d60000;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
-.button {
-  display: inline-block;
-  border: 1px solid white;
-  color: white;
-  text-decoration: none;
-  padding: 12px 20px;
+.card p {
+  line-height: 1.5;
 }
 
 .about {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  text-align: center;
+  border-top: 3px solid #111;
+  border-bottom: 3px solid #111;
+}
+
+.about p {
+  max-width: 700px;
+  font-size: 20px;
   line-height: 1.7;
 }
 
 footer {
-  padding: 30px 25px;
+  padding: 40px 25px;
   text-align: center;
-  color: #888;
+  font-weight: bold;
+}
+
+.instagram {
+  color: #d60000;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 85px;
+  }
 }
 </style>
 </head>
@@ -126,61 +180,97 @@ footer {
 <body>
 
 <header>
-  <div class="logo">RO</div>
-  <a class="instagram" href="https://instagram.com/kanfe_man_09">
-    Instagram
-  </a>
+  <div class="logo">ልዋጭ</div>
+
+  <nav>
+    <a href="#creations">CREATIONS</a>
+    <a href="#about">ABOUT</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h1>RO</h1>
-  <p>Made freely. Made by hand.</p>
+
+  <h1>ልዋጭ</h1>
+
+  <h2>MADE FREELY. MADE BY HAND.</h2>
+
+  <p>
+    Rooted in where we come from.
+    Made for where we're going.
+  </p>
+
+  <div class="freedom">FREEDOM</div>
+
+  <a class="button" href="#creations">
+    EXPLORE THE CREATIONS →
+  </a>
+
 </section>
 
-<section class="section">
-  <h2>CREATIONS</h2>
+<section id="creations">
+
+  <h2 class="title">CREATIONS</h2>
 
   <div class="products">
 
     <div class="card">
-      <img src="IMG_1415.jpeg" alt="RO creation">
+      <img src="IMG_1415.jpeg" alt="ልዋጭ handmade creation">
 
-      <h3>RO VANTA</h3>
-
-      <p>
-        A handmade creation made with freedom and individuality in mind.
-      </p>
+      <h3>ልዋጭ — VANTA</h3>
 
       <div class="price">₪80</div>
 
+      <p>
+        Handmade piece.
+        Created freely, with its own character.
+      </p>
+
       <a class="button" href="https://instagram.com/kanfe_man_09">
-        ORDER
+        ORDER →
       </a>
     </div>
 
     <div class="card">
+      <img src="IMG_1413.jpeg" alt="ልዋጭ handmade creation">
+
       <h3>NEXT CREATION</h3>
 
+      <div class="price">COMING SOON</div>
+
       <p>
-        Something new is coming. Made freely, without limits.
+        Something new is being made.
       </p>
     </div>
 
   </div>
+
 </section>
 
-<section class="section about">
-  <h2>ABOUT RO</h2>
+<section id="about" class="about">
+
+  <h2 class="title">ልዋጭ</h2>
 
   <p>
-    RO is a place for whatever I create.
-    No limits. No single category.
-    Just ideas, handmade pieces and freedom.
+    A place for creation without limits.
+    Handmade pieces, original ideas,
+    old ways mixed with a new feeling.
   </p>
+
+  <div class="freedom">FREEDOM.</div>
+
 </section>
 
 <footer>
-  © 2026 RO — Made Freely
+
+  <p>ልዋጭ © 2026</p>
+
+  <br>
+
+  <a class="instagram"
+     href="https://instagram.com/kanfe_man_09">
+     INSTAGRAM →
+  </a>
+
 </footer>
 
 </body>
